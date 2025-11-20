@@ -7,9 +7,8 @@ public class Izbacivac {
         try {
             System.out.println("Dobrodosli u Club Java.");
             System.out.println("Unesite svoje godine: ");
-            String unos = sc.nextLine();
 
-            int dob = Integer.parseInt(unos);
+            int dob = sc.nextInt();
             provjeriDob(dob);
 
         } catch (IllegalArgumentException e) {
